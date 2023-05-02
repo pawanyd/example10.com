@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use Pawanyd\EntireValidation\EntireValidation;
+use Pawanyd\Inspire\Inspire;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +23,14 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('inspireold', function(EntireValidation $entireValidation) {
+    return $entireValidation->justDoIt();
+});
+
+Route::get('inspire', function(Inspire $inspire) {
+    return view('inspire::index', compact('quote'));
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

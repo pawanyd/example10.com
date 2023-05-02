@@ -1,0 +1,20 @@
+{
+    "name": "pawanyd/entire-validation",
+    "description": "this package will handle all type of validation.",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Pawanyd\\EntireValidation\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pawan Kumar",
+            "email": "pawanyd2012@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0.1"
+    }
+}

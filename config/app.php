@@ -194,6 +194,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        \Pawanyd\EntireValidation\Providers\EntireValidationProvider::class,
+        \Pawanyd\Inspire\Providers\InspireProvider::class,
 
     ],
 

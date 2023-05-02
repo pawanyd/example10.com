@@ -30,6 +30,8 @@
     },
     "autoload-dev": {
         "psr-4": {
+            "Pawanyd\\Inspire\\": "packages/pawanyd/inspire/src/",
+            "Pawanyd\\EntireValidation\\": "packages/pawanyd/entire-validation/src/",
             "Tests\\": "tests/"
         }
     },

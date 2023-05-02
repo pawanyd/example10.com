@@ -1,0 +1,3 @@
+[submodule "package/pawanyd/inspire"]
+	path = package/pawanyd/inspire
+	url = https://github.com/pawanyd/inspire.git
